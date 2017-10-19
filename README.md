@@ -1,5 +1,4 @@
 # filtering_exercises
- - [ ] For CS 481 Image Analysis
  - [ ] Add Gaussian noise with zero mean and a few different variance values
  - [ ] Apply mean filters with a few different window sizes
  - [ ] Apply Gaussian filters with a few different window sizes
