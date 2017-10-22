@@ -71,6 +71,7 @@ figure();
 imphase = angle(fftshift(fft2( double( imorig ) ) ) );
 imshow(imphase);
 title( 'Phase' );
+pause;
 
 % Mask different parts of the magnitude and reconstruct the image with the modified magnitude and the original phase
 
@@ -81,7 +82,6 @@ mask2 = fspecial('average', size(imfourier));
 
 mask3 = ones(size(imfourier));
 mask3(450:550, 500:600) = 0;
-imshow(mask3);
 
 % Apply masks
 masked1 = (imfourier .* mask1);
